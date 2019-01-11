@@ -1,0 +1,38 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_container {  
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.term_input {
+    height: 50px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    box-shadow: 0 1px 5px black;
+    font-size: 25px;
+}
+.btn_search {
+    color: #dddddd;
+    background-color: rgb(54, 54, 54);
+    border: none;
+    border-radius: 5px;
+    height:45px;
+    width: 200px;
+    text-align: center;
+    margin-left: 85px;
+    font-size: 25px;
+    margin-top: 15px;
+    display: block;
+    font-weight: bolder;
+}
