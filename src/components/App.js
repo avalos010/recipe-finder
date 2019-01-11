@@ -23,20 +23,21 @@ const App = () => {
 
     return (
         <div className="container">
-            <h1 className="title">Recipe Finder</h1>
             <div className="input_container">
-            <input class="term_input" value={term} onChange={handleInputChange}/>
-            <button className="btn_search" onClick={fetchData}>Find Recipe!</button>
+            <h1 className="title">Recipe Finder</h1>
+            <input className="term_input" value={term} onChange={handleInputChange}/>
+            <button disabled={!term.length} className="btn_search" onClick={fetchData}>Search</button>
             </div>
 
             <div className="recipe_container">
                 {data ? data.hits.map((hit, index) => {
                     return( 
                     <div key={index} className="recipe">
-                    <h4 className="recipe_name">{hit.recipe.label}</h4>
+                    <h4 className="recipe_name"> {hit.recipe.label}</h4>
                     <img className="recipe_image" src={hit.recipe.image} alt={hit.recipe.label}/>
                     <p className="recipe_diet">Diet: {hit.recipe.dietLabels[0]}</p>
                     <p className="recipe_calories">Calories {Math.round(hit.recipe.calories)} </p>
+                    <a href="">Visit</a>
                     </div>
                     )
                 }) : <p className="recipes_none">Recipes Will Appear here!</p>}
