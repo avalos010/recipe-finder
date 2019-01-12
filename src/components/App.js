@@ -10,7 +10,7 @@ const App = () => {
     const [term, setTerm] = useState('');
 
     useEffect(() => {
-        document.title = 'Recipe Finder'
+        document.title = 'Recipe-Finder'
         AOS.init()
     });
 
