@@ -37,7 +37,7 @@ const App = () => {
                     <img className="recipe_image" src={hit.recipe.image} alt={hit.recipe.label}/>
                     <p className="recipe_diet">Diet: {hit.recipe.dietLabels[0]}</p>
                     <p className="recipe_calories">Calories {Math.round(hit.recipe.calories)} </p>
-                    <a href="">Visit</a>
+                    <a className="recipe_link" target="_blank" href={hit.recipe.url}>Visit</a>
                     </div>
                     )
                 }) : <p className="recipes_none">Recipes Will Appear here!</p>}
