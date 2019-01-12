@@ -1,9 +1,10 @@
 {
   "name": "recipe-search",
   "version": "0.1.0",
-  "homepage": "http://avalos010.github.io/github-recipe",
+  "homepage": "http://avalos010.github.io/recipe-finder",
   "private": true,
   "dependencies": {
+    "aos": "^2.3.4",
     "react": "^16.8.0-alpha.0",
     "react-dom": "^16.8.0-alpha.0",
     "react-scripts": "2.1.3"

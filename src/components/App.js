@@ -1,6 +1,8 @@
 import React,{useContext,useState,useEffect} from 'react';
 import secrets from '../secret'
+import AOS from 'aos'
 
+import 'aos/dist/aos.css'
 import './app.css'
  
 const App = () => {
@@ -9,6 +11,7 @@ const App = () => {
 
     useEffect(() => {
         document.title = 'Recipe Finder'
+        AOS.init()
     });
 
     const fetchData = async() => {
@@ -26,13 +29,13 @@ const App = () => {
             <div className="input_container">
             <h1 className="title">Recipe Finder</h1>
             <input className="term_input" value={term} onChange={handleInputChange}/>
-            <button disabled={!term.length} className="btn_search" onClick={fetchData}>Search</button>
+            <a className="btn_search" href={term ? '#recipe_container' : null} onClick={fetchData}>Search</a>
             </div>
 
-            <div className="recipe_container">
+            <div className="recipe_container" id="recipe_container">
                 {data ? data.hits.map((hit, index) => {
                     return( 
-                    <div key={index} className="recipe">
+                    <div key={index} className="recipe" data-aos-delay="50" data-aos-duration="5000" data-aos="fade-down-left">
                     <h4 className="recipe_name"> {hit.recipe.label}</h4>
                     <img className="recipe_image" src={hit.recipe.image} alt={hit.recipe.label}/>
                     <p className="recipe_diet">Diet: {hit.recipe.dietLabels[0]}</p>
