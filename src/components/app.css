@@ -1,5 +1,6 @@
 *,*::before,*::after {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -9,11 +10,20 @@ body {
 }
 
 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background:#f5f5f5;
 }
 
@@ -25,31 +35,46 @@ h1 {
 }
 
 .recipe_term {
-    align-self: center
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center
 }
 
 .input_container {  
+    display: -webkit-box;  
+    display: -ms-flexbox;  
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height:98vh;
     width: 100%;
     margin-bottom: 100px;
     background: url('../img/background-search.jpg') ;
     background-size: cover;
-    box-shadow: 0 3px 15px black;
+    -webkit-box-shadow: 0 3px 15px black;
+            box-shadow: 0 3px 15px black;
 }
 
 .term_input {
     height: 50px;
     text-transform: uppercase;
     border-left: none;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     width: 300px;
     border-top: none;
     border-right: none;
-    box-shadow: 0 1px 5px black;
+    -webkit-box-shadow: 0 1px 5px black;
+            box-shadow: 0 1px 5px black;
     outline: none;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
     transition: .5s all;
     text-align: center;
     font-size: 25px;
@@ -61,7 +86,9 @@ h1 {
 
 .btn_search {
     color: #dddddd;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     cursor: pointer;
     background-color: rgb(54, 54, 54);
     border: none;
@@ -71,6 +98,8 @@ h1 {
     text-align: center;
     font-size: 25px;
     margin-top: 15px;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
     transition: .5s all;
     display: block;
     text-decoration: none;
@@ -88,9 +117,13 @@ h1 {
 }
 
 .recipe_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .recipe {
@@ -118,6 +151,8 @@ h1 {
 }
 
 .recipe_container {
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
     margin-top: 0;
     min-height: 300px;
