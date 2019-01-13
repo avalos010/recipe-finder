@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "98ed786c08cdfd00d55a",
-    "url": "/recipe-finder/static/css/main.4d31d832.chunk.css"
+    "revision": "9651164465f5eb04d4e3",
+    "url": "/recipe-finder/static/css/main.c1567a3e.chunk.css"
   },
   {
-    "revision": "98ed786c08cdfd00d55a",
-    "url": "/recipe-finder/static/js/main.98ed786c.chunk.js"
+    "revision": "9651164465f5eb04d4e3",
+    "url": "/recipe-finder/static/js/main.96511644.chunk.js"
   },
   {
     "revision": "998797078e1f228faa9a",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/recipe-finder/static/media/background-search.b15a75e6.jpg"
   },
   {
-    "revision": "cf9dace724a74bbf4598a8795973543d",
+    "revision": "bef45618019d0784c3b44f855b3f28ee",
     "url": "/recipe-finder/index.html"
   }
 ];

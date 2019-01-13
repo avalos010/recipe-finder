@@ -1,16 +1,16 @@
 {
-  "main.css": "/recipe-finder/static/css/main.4d31d832.chunk.css",
-  "main.js": "/recipe-finder/static/js/main.98ed786c.chunk.js",
-  "main.js.map": "/recipe-finder/static/js/main.98ed786c.chunk.js.map",
+  "main.css": "/recipe-finder/static/css/main.c1567a3e.chunk.css",
+  "main.js": "/recipe-finder/static/js/main.96511644.chunk.js",
+  "main.js.map": "/recipe-finder/static/js/main.96511644.chunk.js.map",
   "static/css/1.6554a2a7.chunk.css": "/recipe-finder/static/css/1.6554a2a7.chunk.css",
   "static/js/1.99879707.chunk.js": "/recipe-finder/static/js/1.99879707.chunk.js",
   "static/js/1.99879707.chunk.js.map": "/recipe-finder/static/js/1.99879707.chunk.js.map",
   "runtime~main.js": "/recipe-finder/static/js/runtime~main.693457eb.js",
   "runtime~main.js.map": "/recipe-finder/static/js/runtime~main.693457eb.js.map",
   "static/media/app.css": "/recipe-finder/static/media/background-search.b15a75e6.jpg",
-  "static/css/main.4d31d832.chunk.css.map": "/recipe-finder/static/css/main.4d31d832.chunk.css.map",
+  "static/css/main.c1567a3e.chunk.css.map": "/recipe-finder/static/css/main.c1567a3e.chunk.css.map",
   "static/css/1.6554a2a7.chunk.css.map": "/recipe-finder/static/css/1.6554a2a7.chunk.css.map",
   "index.html": "/recipe-finder/index.html",
-  "precache-manifest.881c3df369f67452e072fdc3c3d15be5.js": "/recipe-finder/precache-manifest.881c3df369f67452e072fdc3c3d15be5.js",
+  "precache-manifest.1a77854f5fa792ba4bc1c869575693c0.js": "/recipe-finder/precache-manifest.1a77854f5fa792ba4bc1c869575693c0.js",
   "service-worker.js": "/recipe-finder/service-worker.js"
 }
